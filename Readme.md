@@ -8,7 +8,7 @@ and [`FRC_openings.epd.gz`](FRC_openings.epd.gz) is inherited from the original
 files at 
 [official-stockfish/books](https://github.com/official-stockfish/books).
 
-The file [`DFRC_openings_cdbpv.epd`](DFRC_openings_cdbpv.epd) 
+The file [`DFRC_openings_cdbpv.epd.gz`](DFRC_openings_cdbpv.epd.gz) 
 contains the current cdb evaluations and PVs for each opening. It is created 
 weekly with the help of the script `cdbbulkpv.py` from 
 [cdblib](https://github.com/robertnurnberg/cdblib), and the obtained statistics
