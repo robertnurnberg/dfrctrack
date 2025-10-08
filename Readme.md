@@ -31,6 +31,8 @@ are written to [`dfrc_weekly_edgy.epd`](dfrc_weekly_edgy.epd).
 
 ---
 
+### FRC
+
 <p align="center"> <img src="frctrack.png?raw=true"> </p>
 
 ---
@@ -48,6 +50,10 @@ respectively. See
 for a precise description of the plotted indicators.
 
 <p align="center"> <img src="dfrctracktime.png?raw=true"> </p>
+
+---
+
+### FRC
 
 <p align="center"> <img src="frctracktime.png?raw=true"> </p>
 
