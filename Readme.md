@@ -6,14 +6,16 @@ opening positions on [chessdb.cn](https://chessdb.cn/queryc_en/) (cdb).
 The order of the openings in [`DFRC_openings.epd.gz`](DFRC_openings.epd.gz)
 and [`FRC_openings.epd.gz`](FRC_openings.epd.gz) is inherited from the original
 files at 
-[official-stockfish/books](https://github.com/official-stockfish/books).
+[official-stockfish/books](https://github.com/official-stockfish/books),
+while the FENs in [`chess324_openings.epd.gz`](chess324_openings.epd.gz)
+are sorted alphabetically.
 
 The file [`DFRC_openings_cdbpv.epd.gz`](DFRC_openings_cdbpv.epd.gz) 
 contains the current cdb evaluations and PVs for each opening. It is created 
 weekly with the help of the script `cdbbulkpv.py` from 
 [cdblib](https://github.com/robertnurnberg/cdblib), and the obtained statistics
 are written to [`dfrctrack.csv`](dfrctrack.csv), and similarly for
-[`frctrack.csv`](frctrack.csv).
+[`frctrack.csv`](frctrack.csv) and [`chess324track.csv`](chess324track.csv).
 
 Moreover, each week the hundred positions with the currently shortest PVs on cdb
 (ignoring PVs ending in a two-fold repetition)
@@ -41,11 +43,21 @@ are written to [`dfrc_weekly_edgy.epd`](dfrc_weekly_edgy.epd).
 
 ---
 
+### Chess324
+
+<p align="center"> <img src="chess324track.png?raw=true"> </p>
+
+---
+
+<p align="center"> <img src="chess324trackpv.png?raw=true"> </p>
+
+---
+
 ## Progress
 
 The following graphs attempt to measure the progress cdb makes in exploring
-and evaluating the positions in `DFRC_openings.epd` and `FRC_openings.epd`,
-respectively. See
+and evaluating the positions in `DFRC_openings.epd`, `FRC_openings.epd`
+and `chess324_openings.epd`, respectively. See
 [caissatrack](https://github.com/robertnurnberg/caissatrack)
 for a precise description of the plotted indicators.
 
@@ -56,6 +68,12 @@ for a precise description of the plotted indicators.
 ### FRC
 
 <p align="center"> <img src="frctracktime.png?raw=true"> </p>
+
+---
+
+### Chess324
+
+<p align="center"> <img src="chess324tracktime.png?raw=true"> </p>
 
 ---
 
