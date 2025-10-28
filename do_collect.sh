@@ -24,7 +24,7 @@ python ../caissatrack/extract_fens.py DFRC_openings_cdbpv.epd --shortest 100 --i
 python ../caissatrack/extract_fens.py DFRC_openings_cdbpv.epd --evalMin 90 --evalMax 105 >dfrc_weekly_edgy.epd
 
 rm -f DFRC_openings_cdbpv.epd.gz && gzip -9 DFRC_openings_cdbpv.epd
-python ../cdblib/addons/plot_fens_cdb_dist.py DFRC_openings_cdbpv.epd.gz --density 0 -b 1
+python ../cdblib/addons/plot_fens_cdb_dist.py DFRC_openings_cdbpv.epd.gz --density 0 -b 1 --debug >& plot.log
 
 git add DFRC_openings_cdbpv.epd.gz FRC_openings_cdbpv.epd chess324_openings_cdbpv.epd dfrctrack.csv frctrack.csv chess324track.csv dfrc_weekly_shortest.epd dfrc_weekly_edgy.epd
 git diff --staged --quiet || git commit -m "update data"
